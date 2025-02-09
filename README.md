@@ -44,7 +44,7 @@ Note that you can come up with research ideas / engineering projects that align 
 
 ---
 ### Hermes++
-**Mentors**: [Advik Raj Basani](#)
+**Mentors**: [Advik Raj Basani](mailto:f20221155@goa.bits-pilani.ac.in)
 
 **Skills required**: PyTorch, Distributed Systems, Machine Learning
 
@@ -59,7 +59,7 @@ Distributed Machine Learning (DML) on edge devices faces significant challenges,
 
 ---
 ### Reconfiguring architectures on GPUs
-**Mentors**: [Advik Raj Basani](#), [Arnab K. Paul](#)
+**Mentors**: [Advik Raj Basani](mailto:f20221155@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
 **Skills required**: GPU Architecture, Machine Learning, Distributed Systems
 
@@ -73,7 +73,7 @@ Current GPU architectures are engineered as fixed-function accelerators, optimiz
 
 ---
 ### Dynamic memory realignment on GPUs
-**Mentors**: [Advik Raj Basani](#), [Arnab K. Paul](#)
+**Mentors**: [Advik Raj Basani](mailto:f20221155@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
 **Skills required**: GPU Architecture
 
@@ -87,50 +87,50 @@ Modern GPUs have become critical components for a wide range of computational ta
 
 ---
 ### Static Analyzer for Diamond Pattern Smart Contracts
-**Mentors**: [?]()
+**Mentors**: [Aishwarya Parab](mailto:p20220010@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
-**Skills required**: 
+**Skills required**: Blockchain, Smart Contracts
 
-**Rating of the project (Easy / Medium / Hard)**:
+**Rating of the project (Easy / Medium / Hard)**: Hard
 
+[Static analysis tools](https://pedrocrvz.me/assets/thesis-abstract.pdf) play a crucial role in detecting vulnerabilities in blockchain smart contracts. While several tools exist, most focus on standard smart contracts, leaving a gap in analyzing complex contracts with upgradeability patterns. In this [paper](https://www.usenix.org/conference/usenixsecurity23/presentation/bodell), researchers have developed [USCHunt](https://github.com/USCHunt-Anon/USCHunt?tab=readme-ov-file), a tool built over the [Slither](https://dl.acm.org/doi/10.1109/wetseb.2019.00008), effectively analyzes proxy-based upgradeable smart contracts but does not support the [diamond pattern](https://dev.to/mudgen/understanding-eip-2535-diamonds-the-future-of-smart-contract-design-doh), which introduces additional complexity due to its modular architecture and multiple facets. In this research, we propose extending USCHunt to analyze and characterize diamond pattern smart contracts. We intend to modify existing techniques to analyze delegate calls, function selectors, and storage structures in diamond contracts, making security analysis more thorough. Through thisextension, we aim to improve the detection of vulnerabilities specific to diamond contractsand enhance the security of upgradeable smart contracts in blockchain ecosystems.
 
 **Expected outcomes**:
+- Develop an enhanced version of USCHunt capable of analyzing diamond pattern smart contracts and identify vulnerabilities unique to diamond contracts.
+- Test the extended tool on real-world diamond contracts to measure its effectiveness and accuracy.
+- Provide a publicly available tool to help developers analyze and secure diamond pattern contracts.
 
 ---
 ### Monitoring Dashboard for FL with Flower Framework
-**Mentors**: [?]()
+**Mentors**: [Vimarsh Shah](mailto:f20221060@goa.bits-pilani.ac.in), [Aryan Bethmangalkar](mailto:f20230433@goa.bits-pilani.ac.in)
 
-**Skills required**:
+**Skills required**: Federated Learning, Python, Flower Framework, Docker, Time Series database, Data Visualization
 
-**Rating of the project (Easy / Medium / Hard)**:
+**Rating of the project (Easy / Medium / Hard)**: Easy
 
+Federated Learning (FL) involves training models across multiple decentralized devices while preserving data privacy. However, monitoring FL runs in real time remains a challenge, due to a lack of existing tools which provide visibility into client and server performance metrics. This project aims to develop a centralized monitoring dashboard for FL built on the Flower framework, providing real-time insights into system and training metrics.
 
 **Expected outcomes**:
+- A real-time dashboard that tracks key performance metrics such as CPU, memory, and network usage per client, along with round times and network statistics (bandwidth, latency, etc.).
+- Visualization of FL-specific metrics, including local accuracy, global accuracy, and loss trends over rounds.
+- Integration with the [Flower API](https://flower.ai/docs/framework/index.html) to collect and process live performance data.
+- Logging all the relevant metrics to a centralized database to maintain historical performance records.
+- Support for deployment using Docker.
 
 ---
 ### UnifyFL - Privacy Preserving Techniques
-**Mentors**: [?]()
+**Mentors**: [Druva D.](mailto:f20220131@goa.bits-pilani.ac.in)
 
-**Skills required**:
+**Skills required**: Federated Learning, Privacy, Blockchain
 
-**Rating of the project (Easy / Medium / Hard)**:
+**Rating of the project (Easy / Medium / Hard)**: Medium
 
+EkatraFL is a federated learning framework that enables multiple aggregation servers to collaborate without relying on a third-party aggregation service. Built on top of the Flower federated learning framework, it leverages blockchain for security and IPFS for decentralized data storage. The current proof-of-concept implementation requires running multiple independent processes. This project aims to redesign EkatraFL into a user-friendly API that simplifies interaction with the framework. The API will allow users to configure key components such as the machine learning model, data-sharing policies, blockchain authentication, and IPFS endpoints, facilitating seamless collaboration between federated learning aggregators. Additionally, the project will explore key aspects of federated learning, such as integrating differential privacy mechanisms by leveraging Flower or using libraries like Opacus to enhance privacy and security.
 
 **Expected outcomes**:
 
 ---
 ### Intelligent Pooling in Beegfs
-**Mentors**: [?]()
-
-**Skills required**:
-
-**Rating of the project (Easy / Medium / Hard)**:
-
-
-**Expected outcomes**:
-
----
-### Framework for LLM Inference Scheduling for Edge Clusters
 **Mentors**: [?]()
 
 **Skills required**:
@@ -152,3 +152,42 @@ Modern GPUs have become critical components for a wide range of computational ta
 **Expected outcomes**:
 
 ---
+### System monitoring dashboard for Heterogeneous Cluster
+**Mentors**: [Druva D.](mailto:f20220131@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
+
+**Skills required**: A web development stack, basic networking, interface with external tools
+
+**Rating of the project (Easy / Medium / Hard)**: Easy
+
+[Flower](https://flower.ai/) is a framework that provides a user-friendly interface for building federated AI systems, allowing researchers and developers to easily transition from centralized machine learning to federated learning. It works with various ML libraries such as TensorFlow and PyTorch.
+
+
+**Expected outcomes**:
+- A web server that gathers profiled data from nodes connected to Flower, and a dashboard to accompany it and interpret the data
+- Integration with existing tools like Grafana
+
+---
+### Intelligent Resource Allocation using Infrastructure As Code
+**Mentors**: [?]()
+
+**Skills required**:
+
+**Rating of the project (Easy / Medium / Hard)**:
+
+
+**Expected outcomes**:
+
+---
+### Benchmark suite for fine-grained system analysis for LLM Inferencing
+**Mentors**: [?]()
+
+**Skills required**:
+
+**Rating of the project (Easy / Medium / Hard)**:
+
+
+**Expected outcomes**:
+
+---
+
+DaSHLab is open to any other ideas that you may have! Reach to a mentor or an organization admin to share the idea!
