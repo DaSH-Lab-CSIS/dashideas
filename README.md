@@ -1,12 +1,13 @@
 # DaSH Lab | Google Summer of Code 2025 - Potential Projects
 
-This page provides an overview of possible projects for GSoC 2025, along with the initial steps and prerequisites required before starting a project.
+This page provides an overview of possible projects for GSoC 2025, along with the initial steps and prerequisites required before starting a project. 
+DaSHLab is a research group, that focuses on distributed systems, high-performance computing, and machine learning. Our projects aim to address real-world challenges in these domains, with a strong emphasis on open-source development, reproducible research, and community engagement. Moreover, several projects have been started over 18 months ago and are now in the phase of being matured and polished for open-source release.
 
 ## Getting started with contributing to DaSH Lab
 The GSoC application process involves the following steps:
 
-- Join our [public Slack server](#) and engage in the #gsoc channel to interact with the community.
-- Go through the [GSoC Guide for Students](https://developers.google.com/open-source/gsoc/resources/guide) to understand the various stages of the program. This [blog post](#) will also provide additional insights into the application process.
+- Join our [public Slack server](https://join.slack.com/t/dashlab-gsoc/shared_invite/zt-2zggo0d1y-9j_3uHEoxa4J14ALfQZp1w) and engage in the #gsoc channel to interact with the community.
+- Go through the [GSoC Guide for Students](https://developers.google.com/open-source/gsoc/resources/guide) to understand the various stages of the program.
 - Review the [GSoC Contribution Timeline](https://developers.google.com/open-source/gsoc/timeline) to stay on track with key dates.
 - Familiarize yourself with our [Contributing Guidelines](./CONTRIBUTING.md) to understand the process of contributing to DaSH Lab projects.
 - Prepare and submit your application or proposal, including all necessary documentation, through the Google Summer of Code site.
@@ -14,7 +15,7 @@ The GSoC application process involves the following steps:
 
 ## Applying to DaSH Lab for GSoC 2025
 
-The GSoC application process has several stages. First, make sure you meet the [eligibility requirements](https://summerofcode.withgoogle.com/get-started), such as being at least 18 years old and eligible to work in your country of residence. Once you’ve verified eligibility, reach out to the project mentors. The best way to do this is through the `#gsoc` channel on our [Project Discord Server](#), where you can ask questions and share your draft proposals for feedback. Convince your potential mentors that you’re a good fit for the project by demonstrating your previous work, showcasing your relevant skills and experience, and asking insightful questions. 
+The GSoC application process has several stages. First, make sure you meet the [eligibility requirements](https://summerofcode.withgoogle.com/get-started), such as being at least 18 years old and eligible to work in your country of residence. Once you’ve verified eligibility, reach out to the project mentors. The best way to do this is through the `#gsoc` channel on our [Project Slack Server](https://join.slack.com/t/dashlab-gsoc/shared_invite/zt-2zggo0d1y-9j_3uHEoxa4J14ALfQZp1w), where you can ask questions and share your draft proposals for feedback. Convince your potential mentors that you’re a good fit for the project by demonstrating your previous work, showcasing your relevant skills and experience, and asking insightful questions. 
 Finally, submit your project proposal via the GSoC contributor dashboard. 
 
 Note that working on a project could potentially lead to a publication or a conference presentation. 
@@ -36,14 +37,15 @@ Research experience, coding skills, and familiarity with a project’s codebase 
 - [Static Analyzer for Diamond Pattern Smart Contracts](#static-analyzer-for-diamond-pattern-smart-contracts)
 - [Monitoring Dashboard for FL with Flower Framework](#monitoring-dashboard-for-fl-with-flower-framework)
 - [UnifyFL - Privacy Preserving Techniques](#unifyfl---privacy-preserving-techniques)
-- [Intelligent Pooling in Beegfs](#intelligent-pooling-in-beegfs)
-- [Framework for LLM Inference Scheduling for Edge Clusters](#framework-for-llm-inference-scheduling-for-edge-clusters)
+- [Intelligent Pooling in BeeGFS](#intelligent-pooling-in-beegfs)
 - [I/O Simulator for Fog/Edge Simulators](#io-simulator-for-fogedge-simulators)
+- [System Monitoring Dashboard for Heterogeneous Cluster](#system-monitoring-dashboard-for-heterogeneous-cluster)
+- [Intelligent Resource Allocation using Infrastructure As Code](#intelligent-resource-allocation-using-infrastructure-as-code)
 
 Note that you can come up with research ideas / engineering projects that align with the goals of the DaSH Lab. Feel free to reach out to the organization admins on Slack to discuss your ideas and get feedback.
 
 ---
-### Hermes++
+### Hermes++ - Extending the Hermes Framework
 **Mentors**: [Advik Raj Basani](mailto:f20221155@goa.bits-pilani.ac.in)
 
 **Skills required**: PyTorch, Distributed Systems, Machine Learning
@@ -58,28 +60,28 @@ Distributed Machine Learning (DML) on edge devices faces significant challenges,
 - Optimization of the time complexity equation in Hermes to account for varying computation times across tasks, ensuring accurate performance predictions. This is where majority of the research will be focused on.
 
 ---
-### Reconfiguring architectures on GPUs
+### Reconfiguring Architectures on GPUs
 **Mentors**: [Advik Raj Basani](mailto:f20221155@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
 **Skills required**: GPU Architecture, Machine Learning, Distributed Systems
 
 **Rating of the project (Easy / Medium / Hard)**: Hard
 
-Current GPU architectures are engineered as fixed-function accelerators, optimized at design time for broad classes of workloads but unable to adapt to rapidly shifting computational demands or environmental conditions at runtime. This project asks the bold question: “Can we design a GPU system that autonomously reconfigures its microarchitecture in real time to optimize performance, energy efficiency, and fault resilience across diverse and unpredictable workloads?”
+[Current GPU architectures](https://www.cs.cmu.edu/afs/cs/academic/class/15462-f11/www/lec_slides/lec19.pdf) are engineered as fixed-function accelerators, optimized at design time for broad classes of workloads but unable to adapt to rapidly shifting computational demands or environmental conditions at runtime. This project asks the bold question: “Can we design a GPU system that autonomously [reconfigures its microarchitecture](https://fruitfly1026.github.io/static/files/p31-zhang.pdf) in real time to optimize [performance, energy efficiency, and fault resilience](https://ieeexplore.ieee.org/document/5452013) across diverse and unpredictable workloads?”
 
 **Expected outcomes**:
 - A novel GPU architecture that can dynamically reconfigure its microarchitecture at runtime to optimize performance, energy efficiency, and fault resilience across diverse workloads.
 - A comprehensive evaluation of the proposed architecture on a range of machine learning, scientific computing, and data analytics workloads to demonstrate its effectiveness and versatility.
 
 ---
-### Dynamic memory realignment on GPUs
+### Dynamic Memory Realignment on GPUs
 **Mentors**: [Advik Raj Basani](mailto:f20221155@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
-**Skills required**: GPU Architecture
+**Skills required**: GPU Architecture & more, refer to papers below
 
 **Rating of the project (Easy / Medium / Hard)**: Hard
 
-Modern GPUs have become critical components for a wide range of computational tasks, but they still struggle with inefficiencies caused by latent memory redundancies. These redundancies arise from unnecessary duplication and improper data handling within memory, which leads to performance losses. While existing techniques focus on [mitigating redundancies in registers or caches](https://yonsei.elsevierpure.com/en/publications/shreg-mitigating-register-redundancy-in-gpus), memory-level redundancies remain largely unaddressed. The question driving this research is: **Can we develop a system that dynamically identifies and eliminates memory redundancies in real time, optimizing memory usage without manual intervention?**
+[Modern GPUs](https://www.cs.cmu.edu/afs/cs/academic/class/15462-f11/www/lec_slides/lec19.pdf) have become critical components for a wide range of computational tasks, but they still struggle with [inefficiencies](https://arxiv.org/pdf/2306.10856) caused by latent memory redundancies. These redundancies arise from unnecessary duplication and improper data handling within memory, which leads to performance losses. While existing techniques focus on [mitigating redundancies in registers or caches](https://yonsei.elsevierpure.com/en/publications/shreg-mitigating-register-redundancy-in-gpus), memory-level redundancies remain largely unaddressed. The question driving this research is: **Can we develop a system that dynamically identifies and eliminates memory redundancies in real time, optimizing memory usage without manual intervention?**
 
 **Expected outcomes**:
 - A novel GPU architecture that dynamically realigns memory to optimize memory usage, reduce redundancies, and improve performance across diverse workloads.
@@ -108,7 +110,7 @@ Modern GPUs have become critical components for a wide range of computational ta
 
 **Rating of the project (Easy / Medium / Hard)**: Easy
 
-Federated Learning (FL) involves training models across multiple decentralized devices while preserving data privacy. However, monitoring FL runs in real time remains a challenge, due to a lack of existing tools which provide visibility into client and server performance metrics. This project aims to develop a centralized monitoring dashboard for FL built on the Flower framework, providing real-time insights into system and training metrics.
+Federated Learning (FL) involves training models across multiple decentralized devices while preserving data privacy. However, monitoring FL runs in real time remains a challenge, due to a lack of existing tools which provide [visibility into client](https://openreview.net/forum?id=vwOKBldzFu) and server performance metrics. This project aims to develop a centralized monitoring dashboard for FL built on the Flower framework, providing real-time insights into system and training metrics.
 
 **Expected outcomes**:
 - A real-time dashboard that tracks key performance metrics such as CPU, memory, and network usage per client, along with round times and network statistics (bandwidth, latency, etc.).
@@ -125,20 +127,29 @@ Federated Learning (FL) involves training models across multiple decentralized d
 
 **Rating of the project (Easy / Medium / Hard)**: Medium
 
-EkatraFL is a federated learning framework that enables multiple aggregation servers to collaborate without relying on a third-party aggregation service. Built on top of the Flower federated learning framework, it leverages blockchain for security and IPFS for decentralized data storage. The current proof-of-concept implementation requires running multiple independent processes. This project aims to redesign EkatraFL into a user-friendly API that simplifies interaction with the framework. The API will allow users to configure key components such as the machine learning model, data-sharing policies, blockchain authentication, and IPFS endpoints, facilitating seamless collaboration between federated learning aggregators. Additionally, the project will explore key aspects of federated learning, such as integrating differential privacy mechanisms by leveraging Flower or using libraries like Opacus to enhance privacy and security.
+EkatraFL is a federated learning framework that enables multiple aggregation servers to collaborate without relying on a [third-party aggregation service](https://www.sciencedirect.com/science/article/pii/S0167739X23003333). Built on top of the [Flower federated learning framework](https://flower.ai/docs/framework/index.html), it leverages blockchain for [security and IPFS](https://arxiv.org/abs/1407.3561) for decentralized data storage. The current proof-of-concept implementation requires running multiple independent processes. This project aims to redesign EkatraFL into a user-friendly API that simplifies interaction with the framework. The API will allow users to configure key components such as the machine learning model, data-sharing policies, blockchain authentication, and IPFS endpoints, facilitating seamless collaboration between federated learning aggregators. Additionally, the project will explore key aspects of federated learning, such as integrating differential privacy mechanisms by leveraging Flower or using [libraries like Opacus](https://opacus.ai/) to enhance privacy and security.
 
 **Expected outcomes**:
+- Contact the mentor to understand the project requirements and the current state of the framework.
 
 ---
-### Intelligent Pooling in Beegfs
-**Mentors**: [?]()
+### Intelligent Pooling in BeeGFS
+**Mentors**: [Bhavya Bajaj](mailto:f20230416@goa.bits-pilani.ac.in)
 
-**Skills required**:
+**Skills required**: C, Python, Bash, POSIX, MPI-IO
 
-**Rating of the project (Easy / Medium / Hard)**:
+**Rating of the project (Easy / Medium / Hard)**: Medium
 
+The relentless advancements in compute resources have only intensified the visibility of I/O Bottlenecks, which persist as critical challenges in high-performance computing(HPC) clusters. While parallel file systems (PFS) like BeeGFS are widely adopted to mitigate these challenges, their native, out-of-the-box configurations often introduce operational complexities that fall short of addressing the nuanced demands of modern workloads. Current implementations rely heavily on manual directory-specific storage pool assignments and static striping policies that need user expertise. This leaves non-expert users grappling with inefficient data placement, and missed optimization opportunities. To bridge this implementation gap, we propose an Intelligent Pooling System for BeeGFS, a system that invokes context-sensitive resource management to better align the storage behavior with workload environments without human intervention.
+
+**Resources:**
+- [BeeGFS](https://www.beegfs.io/content/)
+- https://doc.beegfs.io/7.4.3/ 
+- https://dl.acm.org/doi/pdf/10.1145/3611007
 
 **Expected outcomes**:
+- System for vertical storage tiering and intelligent data migration: Design and implementation of system that crafts heterogeneous storage hierarchies (e.g., NVMe/SSD for high-throughput workloads, HDD for archival data) and policies for automated data migration between these layers, driven by characterisation of the workload access patterns  (inspired by Lustre’s Hierarchical Storage Management (HSM)).
+- Fault-Tolerance and policy-adaptive replication: Design and implementation of system that crafts policies that dynamically adjust replication/data erasure based on data criticality and failure domain risks that balance redundancy overheads while maintaining data consistency (inspired by Ceph's Crush algorithm).
 
 ---
 ### I/O Simulator for Fog/Edge Simulators
@@ -152,15 +163,14 @@ EkatraFL is a federated learning framework that enables multiple aggregation ser
 **Expected outcomes**:
 
 ---
-### System monitoring dashboard for Heterogeneous Cluster
+### System Monitoring Dashboard for Heterogeneous Cluster
 **Mentors**: [Druva D.](mailto:f20220131@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
 **Skills required**: A web development stack, basic networking, interface with external tools
 
 **Rating of the project (Easy / Medium / Hard)**: Easy
 
-[Flower](https://flower.ai/) is a framework that provides a user-friendly interface for building federated AI systems, allowing researchers and developers to easily transition from centralized machine learning to federated learning. It works with various ML libraries such as TensorFlow and PyTorch.
-
+Effective monitoring of federated learning (FL) workloads in heterogeneous clusters is crucial for performance optimization, fault detection, and resource management. This project aims to build a system monitoring dashboard for clusters running federated learning workloads with [Flower](https://flower.ai/). The dashboard will collect and visualize system performance metrics from nodes participating in federated learning tasks. It will integrate with existing tools like Grafana to provide real-time insights into resource utilization, model training progress, and network health.
 
 **Expected outcomes**:
 - A web server that gathers profiled data from nodes connected to Flower, and a dashboard to accompany it and interpret the data
@@ -185,17 +195,6 @@ To achieve this, precise and effective profiling of the user’s application is 
 - The IaC framework should work across major cloud providers like GCP, MS Azure and AWS.
 - Reading up on the latest research work in this domain and implementing those ideas into the framework.
 - Clear and crisp documentation on the framework and its design during the project’s progress.
-
----
-### Benchmark suite for fine-grained system analysis for LLM Inferencing
-**Mentors**: [?]()
-
-**Skills required**:
-
-**Rating of the project (Easy / Medium / Hard)**:
-
-
-**Expected outcomes**:
 
 ---
 
