@@ -175,15 +175,15 @@ foretells a shift in priorities for its storage interface, with distributed data
 ### System Monitoring Dashboard for Heterogeneous Cluster
 **Mentors**: [Druva D.](mailto:f20220131@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
-**Skills required**: A web development stack, basic networking, interface with external tools
+**Skills required**: Prometheus, Grafana, InfluxDB
 
 **Rating of the project (Easy / Medium / Hard)**: Easy
 
-Effective monitoring of federated learning (FL) workloads in heterogeneous clusters is crucial for performance optimization, fault detection, and resource management. This project aims to build a system monitoring dashboard for clusters running federated learning workloads with [Flower](https://flower.ai/). The dashboard will collect and visualize system performance metrics from nodes participating in federated learning tasks. It will integrate with existing tools like Grafana to provide real-time insights into resource utilization, model training progress, and network health.
+A lot of academic research is done on clusters having heterogenous nodes. Multiple research sub-groups work on different project that use portions of the lab cluster. Effective monitoring of workloads in such kinds of heterogeneous clusters is crucial for performance optimization, fault detection, and resource management. This project aims to build a system monitoring dashboard collecting various system and workload statistics for clusters consisting of CPU-based nodes, GPU-powered, and edge devices (Jetson Nanos). The dashboard should be able to colate and visualize system performance metrics from all nodes in real-time. It will integrate with existing tools like Grafana to provide real-time insights into resource utilization, workload metrics, and network health. Different groups should be able to select the nodes in the cluster they want to monitor for specific workloads.
 
 **Expected outcomes**:
-- A web server that gathers profiled data from nodes connected to Flower, and a dashboard to accompany it and interpret the data
-- Integration with existing tools like Grafana
+- A web server that gathers profiled data from nodes, and a dashboard to accompany it and interpret the data.
+- Integration with existing tools like Grafana, Prometheus, and InfluxDB
 
 ---
 ### Intelligent Resource Allocation using Infrastructure As Code
