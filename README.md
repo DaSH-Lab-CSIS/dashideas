@@ -168,14 +168,23 @@ EkatraFL is a federated learning framework that enables multiple aggregation ser
 
 ---
 ### Intelligent Resource Allocation using Infrastructure As Code
-**Mentors**: [?]()
+**Mentors**: [Aditya Shiva Sharma](mailto:f20221159@goa.bits-pilani.ac.in)
 
-**Skills required**:
+**Skills required**: Python, Bash, Terraform, Ansible, AWS, Azure, Docker
 
-**Rating of the project (Easy / Medium / Hard)**:
+**Rating of the project (Easy / Medium / Hard)**: Hard
 
+The growing complexity of cloud environments requires efficient resource allocation to optimise cost, performance, and scalability. Infrastructure as Code (IaC) tools like Terraform, Pulumi, etc. help users allocate a fixed amount of resources for their application across multiple cloud service providers. 
+
+However, an application generally does not fully utilise all its allocated resources throughout its lifetime. Thus, intelligent scaling up (to the user’s requested value) and down (to the application’s actual demand) of resources is needed to reduce cloud deployment costs for the end user while allowing the cloud provider to service more clients simultaneously. This project is about developing such a framework.
+
+To achieve this, precise and effective profiling of the user’s application is to be done before deploying the application on the cloud platform. Furthermore, the proposed framework should retain the flexibility of using a combination of cloud services to deploy the application on demand.
 
 **Expected outcomes**:
+- An IaC framework and solution that intelligently profiles an application before its execution, identifies resource requirements and allocates resources dynamically based on the predictions.
+- The IaC framework should work across major cloud providers like GCP, MS Azure and AWS.
+- Reading up on the latest research work in this domain and implementing those ideas into the framework.
+- Clear and crisp documentation on the framework and its design during the project’s progress.
 
 ---
 ### Benchmark suite for fine-grained system analysis for LLM Inferencing
