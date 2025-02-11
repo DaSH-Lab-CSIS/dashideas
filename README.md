@@ -20,7 +20,7 @@ Finally, submit your project proposal via the GSoC contributor dashboard.
 
 Note that working on a project could potentially lead to a publication or a conference presentation. 
 
-### Drafting a Proposal
+### Drafting a Proposal / Contributor Guidelines
 When drafting your proposal, make sure to include the following sections:
 - **Project Description**: Provide a detailed description of the project you wish to work on. You can choose a topic from the list below or propose an idea that aligns with the goal of strengthening the [Project Name] ecosystem.
 - **Technical Solution Proposal**: Outline your planned approach, including your methodology and technical solution. The more detailed, the better.
@@ -28,6 +28,10 @@ When drafting your proposal, make sure to include the following sections:
 
 Ensure to tailor your proposal to the specific project you’re applying for and demonstrate your understanding of the project’s requirements and objectives. Furthermore, make sure to highlight your relevant skills, experience, and contributions to open-source projects.
 Research experience, coding skills, and familiarity with a project’s codebase are all valuable assets that can help you stand out as a candidate. Ensure to talk to the project mentors and community members to get feedback on your proposal and improve it before the application deadline.
+
+- You may also provide a brief introduction about yourself, your background, and your motivation for applying to the project. 
+- Include any relevant experience, skills, or projects that demonstrate your ability to contribute effectively to the project.
+- Make sure to follow the guidelines provided by the DaSH Lab mentors.
 
 ## Projects for GSoC 2025
 
