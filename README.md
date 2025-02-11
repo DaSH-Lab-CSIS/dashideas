@@ -138,7 +138,7 @@ EkatraFL is a federated learning framework that enables multiple aggregation ser
 
 ---
 ### Intelligent Pooling in BeeGFS
-**Mentors**: [Bhavya Bajaj](mailto:f20230416@goa.bits-pilani.ac.in)
+**Mentors**: [Bhavya Bajaj](mailto:f20230416@goa.bits-pilani.ac.in), [Manoj Dongare](mailto:p20240422@goa.bits-pilani.ac.in)
 
 **Skills required**: C, Python, Bash, POSIX, MPI-IO
 
