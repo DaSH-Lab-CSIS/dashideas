@@ -183,7 +183,7 @@ A lot of academic research is done on clusters having heterogenous nodes. Multip
 
 **Expected outcomes**:
 - A web server that gathers profiled data from nodes, and a dashboard to accompany it and interpret the data.
-- Integration with existing tools like Grafana, Prometheus, and InfluxDB
+- Integration with existing tools like [Grafana](https://grafana.com/), [Prometheus](https://prometheus.io/), and [InfluxDB](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-influxdb/).
 
 ---
 ### Intelligent Resource Allocation using Infrastructure As Code
