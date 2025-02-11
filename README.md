@@ -1,7 +1,7 @@
 # DaSH Lab | Google Summer of Code 2025 - Potential Projects
 
 This page provides an overview of possible projects for GSoC 2025, along with the initial steps and prerequisites required before starting a project. 
-DaSHLab is a research group, that focuses on distributed systems, high-performance computing, and machine learning. Our projects aim to address real-world challenges in these domains, with a strong emphasis on open-source development, reproducible research, and community engagement. Moreover, several projects have been started over 18 months ago and are now in the phase of being matured and polished for open-source release.
+DaSHLab is a research group, that focuses on distributed systems, high-performance computing, and systems for machine learning. Our projects aim to address real-world challenges in these domains, with a strong emphasis on open-source development, reproducible research, and community engagement. Moreover, several projects have started over 18 months ago and are now in the phase of being matured and polished for open-source release.
 
 ## Getting started with contributing to DaSH Lab
 The GSoC application process involves the following steps:
@@ -35,7 +35,7 @@ Research experience, coding skills, and familiarity with a project’s codebase 
 
 ## Projects for GSoC 2025
 
-- [Hermes++](#hermes++)
+- [Hermes++ - Extending the Framework for Deploying Edge-Based ML Models](#hermes++)
 - [Reconfiguring Architectures on GPUs](#reconfiguring-architectures-on-gpus)
 - [Dynamic Memory Realignment on GPUs](#dynamic-memory-realignment-on-gpus)
 - [Static Analyzer for Diamond Pattern Smart Contracts](#static-analyzer-for-diamond-pattern-smart-contracts)
@@ -95,11 +95,11 @@ Distributed Machine Learning (DML) on edge devices faces significant challenges,
 ### Static Analyzer for Diamond Pattern Smart Contracts
 **Mentors**: [Aishwarya Parab](mailto:p20220010@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
-**Skills required**: Blockchain, Smart Contracts
+**Skills required**: Blockchain, Smart Contracts, Solidity
 
 **Rating of the project (Easy / Medium / Hard)**: Hard
 
-[Static analysis tools](https://pedrocrvz.me/assets/thesis-abstract.pdf) play a crucial role in detecting vulnerabilities in blockchain smart contracts. While several tools exist, most focus on standard smart contracts, leaving a gap in analyzing complex contracts with upgradeability patterns. In this [paper](https://www.usenix.org/conference/usenixsecurity23/presentation/bodell), researchers have developed [USCHunt](https://github.com/USCHunt-Anon/USCHunt?tab=readme-ov-file), a tool built over the [Slither](https://dl.acm.org/doi/10.1109/wetseb.2019.00008), effectively analyzes proxy-based upgradeable smart contracts but does not support the [diamond pattern](https://dev.to/mudgen/understanding-eip-2535-diamonds-the-future-of-smart-contract-design-doh), which introduces additional complexity due to its modular architecture and multiple facets. In this research, we propose extending USCHunt to analyze and characterize diamond pattern smart contracts. We intend to modify existing techniques to analyze delegate calls, function selectors, and storage structures in diamond contracts, making security analysis more thorough. Through thisextension, we aim to improve the detection of vulnerabilities specific to diamond contractsand enhance the security of upgradeable smart contracts in blockchain ecosystems.
+[Static analysis tools](https://pedrocrvz.me/assets/thesis-abstract.pdf) play a crucial role in detecting vulnerabilities in blockchain smart contracts. While several tools exist, most focus on standard smart contracts, leaving a gap in analyzing complex contracts with upgradeability patterns. In this [paper](https://www.usenix.org/conference/usenixsecurity23/presentation/bodell), researchers have developed [USCHunt](https://github.com/USCHunt-Anon/USCHunt?tab=readme-ov-file), a tool built over the [Slither](https://dl.acm.org/doi/10.1109/wetseb.2019.00008), that effectively analyzes proxy-based upgradeable smart contracts but does not support the [diamond pattern](https://dev.to/mudgen/understanding-eip-2535-diamonds-the-future-of-smart-contract-design-doh), which introduces additional complexity due to its modular architecture and multiple facets. In this research, we propose extending USCHunt to analyze and characterize diamond pattern smart contracts. We intend to modify existing techniques to analyze delegate calls, function selectors, and storage structures in diamond contracts, making security analysis more thorough. Through this extension, we aim to improve the detection of vulnerabilities specific to diamond contractsand enhance the security of upgradeable smart contracts in blockchain ecosystems.
 
 **Expected outcomes**:
 - Develop an enhanced version of USCHunt capable of analyzing diamond pattern smart contracts and identify vulnerabilities unique to diamond contracts.
@@ -144,7 +144,7 @@ EkatraFL is a federated learning framework that enables multiple aggregation ser
 
 **Rating of the project (Easy / Medium / Hard)**: Medium
 
-The relentless advancements in compute resources have only intensified the visibility of I/O Bottlenecks, which persist as critical challenges in high-performance computing(HPC) clusters. While parallel file systems (PFS) like BeeGFS are widely adopted to mitigate these challenges, their native, out-of-the-box configurations often introduce operational complexities that fall short of addressing the nuanced demands of modern workloads. Current implementations rely heavily on manual directory-specific storage pool assignments and static striping policies that need user expertise. This leaves non-expert users grappling with inefficient data placement, and missed optimization opportunities. To bridge this implementation gap, we propose an Intelligent Pooling System for BeeGFS, a system that invokes context-sensitive resource management to better align the storage behavior with workload environments without human intervention.
+The relentless advancements in compute resources have only intensified the visibility of I/O bottlenecks, which persist as critical challenges in high-performance computing (HPC) clusters. While parallel file systems (PFS) like BeeGFS are widely adopted to mitigate these challenges, their native, out-of-the-box configurations often introduce operational complexities that fall short of addressing the nuanced demands of modern workloads. Current implementations rely heavily on manual directory-specific storage pool assignments and static striping policies that need user expertise. This leaves non-expert users grappling with inefficient data placement, and missed optimization opportunities. To bridge this implementation gap, we propose an Intelligent Pooling System for BeeGFS, a system that invokes context-sensitive resource management to better align the storage behavior with workload environments without human intervention.
 
 **Resources:**
 - [BeeGFS](https://www.beegfs.io/content/)
