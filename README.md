@@ -157,14 +157,19 @@ The relentless advancements in compute resources have only intensified the visib
 
 ---
 ### I/O Simulator for Fog/Edge Simulators
-**Mentors**: [?]()
+**Mentors**: [Yogesh Singla](mailto:f20213030@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
-**Skills required**:
+**Skills required**: Python, Operating Systems, Distributed Systems (add-on), POSIX API (add-on) 
 
-**Rating of the project (Easy / Medium / Hard)**:
+**Rating of the project (Easy / Medium / Hard)**: Medium
 
+Fog computing is a paradigm for offering computing and storage capabilities at the edge of the network, prioritizing low latency, and a distributed model. This paradigm shift also
+foretells a shift in priorities for its storage interface, with distributed data storage mechanisms still being an open problem in fog computing. Since these priorities depend heavily on the individual scenario it targets, simulating this interface in a fog computing simulator would be a beneficial use case for adopters of this paradigm.  Popular fog simulators like iFogSim (https://www.sciencedirect.com/science/article/pii/S0164121222000863) have a relatively barebones I/O implementation, useful only as a requirement for simulating other components properly. There are fog-based file systems, such as, FogFS (https://dl.acm.org/doi/10.1109/CCNC.2019.8651807), MeFS (https://ieeexplore.ieee.org/document/8792987), and EdgeStore (https://ieeexplore.ieee.org/document/8473383). Currently, there are no simulators which can support the simulation of any of the aforementioned fog filesystems. In this project we should work on a generic interface which exposes structures and functionality for important filesystem features like user mobility and fault tolerance, while also providing parts of the POSIX API and a file hierarchy implementation using B-Trees. 
 
 **Expected outcomes**:
+- Extension of an open-source fog simulator to have I/O interface.
+- Build and deploy toy fog applications on the simulator to show the I/O behavior of the simulator.
+- Add capabilities of plug and play of different fog-based file systems.
 
 ---
 ### System Monitoring Dashboard for Heterogeneous Cluster
@@ -193,6 +198,11 @@ The growing complexity of cloud environments requires efficient resource allocat
 However, an application generally does not fully utilise all its allocated resources throughout its lifetime. Thus, intelligent scaling up (to the user’s requested value) and down (to the application’s actual demand) of resources is needed to reduce cloud deployment costs for the end user while allowing the cloud provider to service more clients simultaneously. This project is about developing such a framework.
 
 To achieve this, precise and effective profiling of the user’s application is to be done before deploying the application on the cloud platform. Furthermore, the proposed framework should retain the flexibility of using a combination of cloud services to deploy the application on demand.
+
+**References:**
+- Terraform [Docs](https://developer.hashicorp.com/terraform/docs) and [GitHub](https://github.com/hashicorp/terraform)
+- [Pulumi Docs](https://www.pulumi.com/docs/iac/get-started/)
+- Kubernetes [Autoscaler](https://github.com/kubernetes/autoscaler) (For ideas and inspiration)
 
 **Expected outcomes**:
 - An IaC framework and solution that intelligently profiles an application before its execution, identifies resource requirements and allocates resources dynamically based on the predictions.
