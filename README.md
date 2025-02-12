@@ -56,9 +56,9 @@ Note that you can come up with research ideas / engineering projects that align 
 
 **Rating of the project (Easy / Medium / Hard)**: Medium
 
-**Expected size of project**: 175 hours
+**Expected size of project**: 175 hours (medium)
 
-Distributed Machine Learning (DML) on edge devices faces significant challenges, including slow convergence and communication overhead, due to the [heterogeneous nature of edge environments](https://www.iiconsortium.org/news-pdf/joi-articles/2021_June_JoI_Edge_Hetero_Compute_Byers_Final.pdf). In this [paper](https://arxiv.org/pdf/2410.20495), a novel probabilistic framework, Hermes, is proposed to address these issues. Hermes reduces communication overhead by transmitting model updates only when significant improvements in generalization are detected, and optimizes dataset allocation to avoid performance degradation caused by straggler nodes. A major assumption in the paper is the time complexity equation (Equation 3), which assumes constant time for ML operations across all tasks. However, this assumption does not necessarily hold for certain workloads, such as [Graph Neural Networks (GNNs)](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications), where the computation time can vary significantly. Additionally, Hermes is currently supported for TensorFlow, but we hope to aim for broader implementation for PyTorch.
+Distributed Machine Learning (DML) on edge devices faces significant challenges, including slow convergence and communication overhead, due to the [heterogeneous nature of edge environments](https://www.iiconsortium.org/news-pdf/joi-articles/2021_June_JoI_Edge_Hetero_Compute_Byers_Final.pdf). In this [paper](https://arxiv.org/pdf/2410.20495), a novel probabilistic framework, Hermes, is proposed to address these issues. Hermes reduces communication overhead by transmitting model updates only when significant improvements in generalization are detected, and optimizes dataset allocation to avoid performance degradation caused by straggler nodes. A major assumption in the paper is the time complexity equation (Equation 3), which assumes constant time for ML operations across all tasks. However, this assumption does not necessarily hold for certain workloads, such as [Graph Neural Networks (GNNs)](https://neptune.ai/blog/graph-neural-network-and-some-of-gnn-applications), where the computation time can vary significantly. Additionally, Hermes is currently supported for TensorFlow, but we hope to aim for broader implementation for PyTorch. (Implementation of Hermes: https://github.com/DaSH-Lab-CSIS/Hermes)
 
 **Expected outcomes**:
 - An extended implementation of Hermes supporting PyTorch, enabling broader applicability for various ML tasks and enhancing interoperability across frameworks.
@@ -73,7 +73,7 @@ Distributed Machine Learning (DML) on edge devices faces significant challenges,
 
 **Rating of the project (Easy / Medium / Hard)**: Hard
 
-**Expected size of project**: 350 hours
+**Expected size of project**: 350 hours (large)
 
 [Current GPU architectures](https://www.cs.cmu.edu/afs/cs/academic/class/15462-f11/www/lec_slides/lec19.pdf) are engineered as fixed-function accelerators, optimized at design time for broad classes of workloads but unable to adapt to rapidly shifting computational demands or environmental conditions at runtime. This project asks the bold question: “Can we design a GPU system that autonomously [reconfigures its microarchitecture](https://fruitfly1026.github.io/static/files/p31-zhang.pdf) in real time to optimize [performance, energy efficiency, and fault resilience](https://ieeexplore.ieee.org/document/5452013) across diverse and unpredictable workloads?”
 
@@ -89,7 +89,7 @@ Distributed Machine Learning (DML) on edge devices faces significant challenges,
 
 **Rating of the project (Easy / Medium / Hard)**: Hard
 
-**Expected size of project**: 350 hours
+**Expected size of project**: 350 hours (large)
 
 [Modern GPUs](https://www.cs.cmu.edu/afs/cs/academic/class/15462-f11/www/lec_slides/lec19.pdf) have become critical components for a wide range of computational tasks, but they still struggle with [inefficiencies](https://arxiv.org/pdf/2306.10856) caused by latent memory redundancies. These redundancies arise from unnecessary duplication and improper data handling within memory, which leads to performance losses. While existing techniques focus on [mitigating redundancies in registers or caches](https://yonsei.elsevierpure.com/en/publications/shreg-mitigating-register-redundancy-in-gpus), memory-level redundancies remain largely unaddressed. The question driving this research is: **Can we develop a system that dynamically identifies and eliminates memory redundancies in real time, optimizing memory usage without manual intervention?**
 
@@ -105,7 +105,7 @@ Distributed Machine Learning (DML) on edge devices faces significant challenges,
 
 **Rating of the project (Easy / Medium / Hard)**: Hard
 
-**Expected size of project**: 350 hours
+**Expected size of project**: 350 hours (large)
 
 [Static analysis tools](https://pedrocrvz.me/assets/thesis-abstract.pdf) play a crucial role in detecting vulnerabilities in blockchain smart contracts. While several tools exist, most focus on standard smart contracts, leaving a gap in analyzing complex contracts with upgradeability patterns. In this [paper](https://www.usenix.org/conference/usenixsecurity23/presentation/bodell), researchers have developed [USCHunt](https://github.com/USCHunt-Anon/USCHunt?tab=readme-ov-file), a tool built over the [Slither](https://dl.acm.org/doi/10.1109/wetseb.2019.00008), that effectively analyzes proxy-based upgradeable smart contracts but does not support the [diamond pattern](https://dev.to/mudgen/understanding-eip-2535-diamonds-the-future-of-smart-contract-design-doh), which introduces additional complexity due to its modular architecture and multiple facets. In this research, we propose extending USCHunt to analyze and characterize diamond pattern smart contracts. We intend to modify existing techniques to analyze delegate calls, function selectors, and storage structures in diamond contracts, making security analysis more thorough. Through this extension, we aim to improve the detection of vulnerabilities specific to diamond contractsand enhance the security of upgradeable smart contracts in blockchain ecosystems.
 
@@ -122,7 +122,7 @@ Distributed Machine Learning (DML) on edge devices faces significant challenges,
 
 **Rating of the project (Easy / Medium / Hard)**: Easy
 
-**Expected size of project**: 90 hours
+**Expected size of project**: 90 hours (small)
 
 Federated Learning (FL) involves training models across multiple decentralized devices while preserving data privacy. However, monitoring FL runs in real time remains a challenge, due to a lack of existing tools which provide [visibility into client](https://openreview.net/forum?id=vwOKBldzFu) and server performance metrics. This project aims to develop a centralized monitoring dashboard for FL built on the Flower framework, providing real-time insights into system and training metrics.
 
@@ -141,7 +141,7 @@ Federated Learning (FL) involves training models across multiple decentralized d
 
 **Rating of the project (Easy / Medium / Hard)**: Medium
 
-**Expected size of project**: 175 hours
+**Expected size of project**: 175 hours (medium)
 
 EkatraFL is a federated learning framework that enables multiple aggregation servers to collaborate without relying on a [third-party aggregation service](https://www.sciencedirect.com/science/article/pii/S0167739X23003333). Built on top of the [Flower federated learning framework](https://flower.ai/docs/framework/index.html), it leverages blockchain for [security and IPFS](https://arxiv.org/abs/1407.3561) for decentralized data storage. The current proof-of-concept implementation requires running multiple independent processes. This project aims to redesign EkatraFL into a user-friendly API that simplifies interaction with the framework. The API will allow users to configure key components such as the machine learning model, data-sharing policies, blockchain authentication, and IPFS endpoints, facilitating seamless collaboration between federated learning aggregators. Additionally, the project will explore key aspects of federated learning, such as integrating differential privacy mechanisms by leveraging Flower or using [libraries like Opacus](https://opacus.ai/) to enhance privacy and security.
 
@@ -156,7 +156,7 @@ EkatraFL is a federated learning framework that enables multiple aggregation ser
 
 **Rating of the project (Easy / Medium / Hard)**: Medium
 
-**Expected size of project**: 175 hours
+**Expected size of project**: 175 hours (medium)
 
 The relentless advancements in compute resources have only intensified the visibility of I/O bottlenecks, which persist as critical challenges in high-performance computing (HPC) clusters. While parallel file systems (PFS) like BeeGFS are widely adopted to mitigate these challenges, their native, out-of-the-box configurations often introduce operational complexities that fall short of addressing the nuanced demands of modern workloads. Current implementations rely heavily on manual directory-specific storage pool assignments and static striping policies that need user expertise. This leaves non-expert users grappling with inefficient data placement, and missed optimization opportunities. To bridge this implementation gap, we propose an Intelligent Pooling System for BeeGFS, a system that invokes context-sensitive resource management to better align the storage behavior with workload environments without human intervention.
 
@@ -177,7 +177,7 @@ The relentless advancements in compute resources have only intensified the visib
 
 **Rating of the project (Easy / Medium / Hard)**: Medium
 
-**Expected size of project**: 175 hours
+**Expected size of project**: 175 hours (medium)
 
 Fog computing is a paradigm for offering computing and storage capabilities at the edge of the network, prioritizing low latency, and a distributed model. This paradigm shift also
 foretells a shift in priorities for its storage interface, with distributed data storage mechanisms still being an open problem in fog computing. Since these priorities depend heavily on the individual scenario it targets, simulating this interface in a fog computing simulator would be a beneficial use case for adopters of this paradigm.  Popular fog simulators like [iFogSim](https://www.sciencedirect.com/science/article/pii/S0164121222000863) have a relatively barebones I/O implementation, useful only as a requirement for simulating other components properly. There are fog-based file systems, such as, [FogFS](https://dl.acm.org/doi/10.1109/CCNC.2019.8651807), [MeFS](https://ieeexplore.ieee.org/document/8792987), and [EdgeStore](https://ieeexplore.ieee.org/document/8473383). Currently, there are no simulators which can support the simulation of any of the aforementioned fog filesystems. In this project we should work on a generic interface which exposes structures and functionality for important filesystem features like user mobility and fault tolerance, while also providing parts of the POSIX API and a file hierarchy implementation using B-Trees. 
@@ -195,7 +195,7 @@ foretells a shift in priorities for its storage interface, with distributed data
 
 **Rating of the project (Easy / Medium / Hard)**: Easy
 
-**Expected size of project**: 90 hours
+**Expected size of project**: 90 hours (small)
 
 A lot of academic research is done on clusters having heterogenous nodes. Multiple research sub-groups work on different project that use portions of the lab cluster. Effective monitoring of workloads in such kinds of heterogeneous clusters is crucial for performance optimization, fault detection, and resource management. This project aims to build a system monitoring dashboard collecting various system and workload statistics for clusters consisting of CPU-based nodes, GPU-powered, and edge devices (Jetson Nanos). The dashboard should be able to colate and visualize system performance metrics from all nodes in real-time. It will integrate with existing tools like Grafana to provide real-time insights into resource utilization, workload metrics, and network health. Different groups should be able to select the nodes in the cluster they want to monitor for specific workloads.
 
@@ -211,7 +211,7 @@ A lot of academic research is done on clusters having heterogenous nodes. Multip
 
 **Rating of the project (Easy / Medium / Hard)**: Hard
 
-**Expected size of project**: 350 hours
+**Expected size of project**: 350 hours (large)
 
 The growing complexity of cloud environments requires efficient resource allocation to optimise cost, performance, and scalability. Infrastructure as Code (IaC) tools like Terraform, Pulumi, etc. help users allocate a fixed amount of resources for their application across multiple cloud service providers. 
 
