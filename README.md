@@ -99,7 +99,7 @@ Distributed Machine Learning (DML) on edge devices faces significant challenges,
 
 ---
 ### Static Analyzer for Diamond Pattern Smart Contracts
-**Mentors**: [Aishwarya Parab](mailto:p20220010@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
+**Mentors**: [Aishwarya Parab](mailto:p20220010@goa.bits-pilani.ac.in), [Harsh Poddar](mailto:f20211086@goa.bits-pilani.ac.in), [Arnab K. Paul](mailto:arnabp@goa.bits-pilani.ac.in)
 
 **Skills required**: Blockchain, Smart Contracts, Solidity
 
@@ -150,7 +150,7 @@ EkatraFL is a federated learning framework that enables multiple aggregation ser
 
 ---
 ### Intelligent Pooling in BeeGFS
-**Mentors**: [Bhavya Bajaj](mailto:f20230416@goa.bits-pilani.ac.in), [Manoj Dongare](mailto:p20240422@goa.bits-pilani.ac.in)
+**Mentors**: [Bhavya Bajaj](mailto:f20230416@goa.bits-pilani.ac.in), [Manoj Dongare](mailto:p20240422@goa.bits-pilani.ac.in), [Kaaviya Uthirapandian](mailto:f20230489@goa.bits-pilani.ac.in)
 
 **Skills required**: C, Python, Bash, POSIX, MPI-IO
 
